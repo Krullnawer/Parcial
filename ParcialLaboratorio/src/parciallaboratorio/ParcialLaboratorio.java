@@ -20,12 +20,23 @@ public class ParcialLaboratorio {
         // TODO code application logic here
         
         int valor=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numero"));
+        int valor2=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el otro numero"));
         
         if(valor%2==0){
             System.out.println("Este numero es par: "+valor);
         }else{
             System.out.println("Este numero es impar: "+valor);
         }
+        
+        if(valor<valor2){
+            System.out.println("Este primer valor es menor que el segundo " +valor +"<"+valor2);
+        }else if(valor>valor2){
+             System.out.println("Este primer valor es mayor que el segundo " +valor +">"+valor2);
+        }else{
+             System.out.println("los 2 valores son iguales " +valor +"="+valor2);
+        }
+               
+        
     }
     
 }
