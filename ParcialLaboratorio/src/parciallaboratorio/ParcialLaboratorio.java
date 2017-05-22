@@ -5,6 +5,8 @@
  */
 package parciallaboratorio;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Julian
@@ -16,6 +18,14 @@ public class ParcialLaboratorio {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        int valor=Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numero"));
+        
+        if(valor%2==0){
+            System.out.println("Este numero es par: "+valor);
+        }else{
+            System.out.println("Este numero es impar: "+valor);
+        }
     }
     
 }
